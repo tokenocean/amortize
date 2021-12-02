@@ -62,7 +62,9 @@
 
 <svelte:window bind:scrollY={y} />
 
+{#if !($page.path.includes('/a/') && $page.path.split('/').length === 3)}
 <Head metadata={branding.meta} />
+{/if}
 
 <Snack />
 <div class="bg-brand">
