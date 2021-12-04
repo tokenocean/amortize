@@ -226,7 +226,7 @@ select {
 }
 
 .box-shadow {
-  box-shadow: 1px 0px 5px 0px #a97fe6;
+  box-shadow: 1px 0px 5px 0px #d7dae5;
 }
 
 .sticky {
@@ -235,7 +235,7 @@ select {
   left: 0;
   width: 100%;
   @apply bg-brand;
-  box-shadow: 0px 0px 5px 0px #a97fe6;
+  box-shadow: 0px 0px 5px 0px #d7dae5;
   z-index: 300;
 }
 

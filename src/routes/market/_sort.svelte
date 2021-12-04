@@ -49,7 +49,7 @@
 
 <div class="sort-container">
   <select
-    class="rounded-full appearance-none bg-greyTwo border-blueberry text-greyOne px-8"
+    class="rounded-full appearance-none bg-greyOne text-black px-8"
     bind:value={$sortCriteria}>
     <option value="newest">Newest</option>
     <option value="oldest">Oldest</option>
