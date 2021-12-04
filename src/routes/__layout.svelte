@@ -100,18 +100,18 @@
 {/if}
 
 <Snack />
+<div class="bg-brand">
+  <Sidebar bind:open />
+  <div class={y > 50 ? "sticky" : ""}>
+    <Navbar bind:sidebar={open} />
+  </div>
+  <Dialog />
 
 <Sidebar bind:open />
 <div class={y > 50 ? "sticky" : ""}>
   <Navbar bind:sidebar={open} />
 </div>
 <Dialog />
-
-<main>
-  <div class="mx-auto min-h-screen">
-    <slot />
-  </div>
-</main>
 
 <Footer />
 

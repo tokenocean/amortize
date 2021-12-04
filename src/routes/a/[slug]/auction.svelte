@@ -404,9 +404,70 @@
     : [...Object.keys(tickers), undefined];
 </script>
 
+<style>
+  .container {
+    background-color: #ecf6f7;
+    width: 100% !important;
+    min-height: 100vh;
+    margin: 0;
+    max-width: 100%;
+  }
+
+  input {
+    @apply rounded-lg mb-4 mt-2;
+    &:disabled {
+      @apply bg-gray-100;
+    }
+  }
+
+  .tooltip {
+    cursor: pointer;
+  }
+  .tooltip .tooltip-text {
+    visibility: hidden;
+    padding: 15px;
+    position: absolute;
+    z-index: 100;
+    width: 300px;
+    font-style: normal;
+  }
+  .tooltip:hover .tooltip-text {
+    visibility: visible;
+  }
+
+  input[type="checkbox"]:checked {
+    appearance: none;
+    border: 5px solid #fff;
+    outline: 2px solid #0ad4e3;
+    background-color: #0ad4e3;
+    padding: 2px;
+    border-radius: 0;
+  }
+
+  input[type="radio"]:checked {
+    appearance: none;
+    border: 7px solid #0ad4e3;
+    background-color: #fff;
+    padding: 2px;
+    border-radius: 100%;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .container {
+      background: none;
+    }
+    .tooltip .tooltip-text {
+      width: 100%;
+      left: 0px;
+      top: 30px;
+    }
+  }
+
+</style>
+
 <div class="container mx-auto md:p-20">
   <div class="w-full max-w-4xl mx-auto bg-white md:p-10 rounded-xl">
-    <a class="block mb-6 text-midblue" href={`/a/${artwork.slug}`}>
+    <a class="block mb-6 text-turquoise" href={`/a/${artwork.slug}`}>
       <div class="flex">
         <Fa icon={faChevronLeft} class="my-auto mr-1" />
         <div>Back</div>
@@ -454,7 +515,7 @@
               <label for="price"
                 >Price
                 <span class="tooltip">
-                  <i class="text-midblue text-xl tooltip">
+                  <i class="text-turquoise text-xl tooltip">
                     <Fa icon={faQuestionCircle} pull="right" class="mt-1" />
                   </i>
                   <span class="tooltip-text bg-gray-100 shadow ml-4 rounded">
@@ -498,7 +559,7 @@
                     />
                     <span class="ml-3 text-xl">Royalty Recipients</span>
                     <span class="tooltip">
-                      <i class="ml-3 text-midblue text-xl tooltip">
+                      <i class="ml-3 text-turquoise text-xl tooltip">
                         <Fa icon={faQuestionCircle} pull="right" class="mt-1" />
                       </i>
                       <span
@@ -598,7 +659,7 @@
                     <label>
                       Reserve price
                       <span class="tooltip">
-                        <i class="ml-3 text-midblue text-xl tooltip">
+                        <i class="ml-3 text-turquoise text-xl tooltip">
                           <Fa
                             icon={faQuestionCircle}
                             pull="right"

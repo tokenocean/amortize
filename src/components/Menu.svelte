@@ -7,7 +7,7 @@
   let toggle = () => (open = !open);
 </script>
 
-<div class="flex justify-between items-center menu relative">
+<div class="flex justify-between items-center menu relative text-greyOne">
   <Search suggest={false} />
   <a sveltekit:prefetch href="/market"
     ><button on:click={toggle}>Market</button></a

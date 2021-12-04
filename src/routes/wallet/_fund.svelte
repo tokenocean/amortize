@@ -124,6 +124,22 @@
   }
 </script>
 
+<style>
+  .hover {
+    @apply border-b-2;
+    border-bottom: 3px solid #0ad4e3;
+  }
+
+  .tabs div {
+    @apply mb-auto h-8 mx-2 md:mx-4 mt-6;
+    &:hover {
+      @apply border-b-2;
+      border-bottom: 3px solid #0ad4e3;
+    }
+  }
+
+</style>
+
 {#if $session.user && funding}
   <div class="dark-bg mb-2 md:rounded-lg p-5">
     <div class="flex justify-between place-items-center text-gray-400">
@@ -141,7 +157,7 @@
         Funding through a confidential liquid address, bitcoin address, or
         lightning invoice is achieved by automatically converting to L-BTC
         through
-        <a href="https://coinos.io" style="color: #6ed8e0">coinos.io</a>. Funds
+        <a href="https://coinos.io" style="color: #0ad4e3">coinos.io</a>. Funds
         will be subject to counterparty risk during the conversion process.
       </p>
 

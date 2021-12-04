@@ -26,6 +26,12 @@
   src: url("/font/OpenSans-Bold.ttf") format("opentype");
 }
 
+@font-face {
+  font-family: Poppins-ExtraBold;
+  font-weight: bold;
+  src: url("/font/Poppins-ExtraBold.ttf") format("opentype");
+}
+
 body {
   font-family: OpenSans, system-ui, -apple-system,
     /* Firefox supports this but not yet `system-ui` */ "Segoe UI", Roboto,
@@ -33,7 +39,7 @@ body {
   font-weight: normal;
   font-size: 18px;
   line-height: 32px;
-  color: #2d2e32;
+  color: #d7dae5;
 }
 
 @media (max-width: 768px) {
@@ -45,8 +51,8 @@ body {
 h1,
 h2,
 h3 {
-  font-family: "Montserrat", Helvetica, Arial, sans-serif;
-  color: #2d2e32;
+  font-family: "Poppins-ExtraBold", sans-serif;
+  color: white;
   font-weight: bold;
 }
 
@@ -93,20 +99,10 @@ h3 {
 Brand Colors
 */
 
-/* Light blue — Primary accent color */
-.text-lightblue {
-  color: #6ed8e0;
-}
-.bg-lightblue {
-  background: #6ed8e0;
-}
+/* Light blue — Blueberry accent color */
 
 .border-lightblue {
-  border-bottom: 1px solid #6ed8e0;
-}
-
-.text-midblue {
-  color: #0f828a;
+  border-bottom: 1px solid #5082f7;
 }
 
 /*Light blue gradient — Gradient accent color */
@@ -120,18 +116,8 @@ Brand Colors
   );
 }
 
-/*Logo gradient — Gradient for logo or other small applications */
-.logo-grad {
-  background: rgb(143, 238, 245);
-  background: linear-gradient(
-    90deg,
-    rgba(143, 238, 245, 1) 0%,
-    rgba(80, 190, 198, 1) 50%
-  );
-}
-
 /**
-Buttons 
+Buttons
 */
 
 button {
@@ -147,20 +133,14 @@ button {
   align-items: center;
   color: #444444;
   font-weight: bold;
-  background: rgb(143, 238, 245);
-  background: linear-gradient(
-    90deg,
-    rgba(143, 238, 245, 1) 0%,
-    rgba(127, 228, 235, 1) 50%,
-    rgba(110, 216, 224, 1) 100%
-  );
+  background-color: #0ad4e3;
 }
 
 .secondary-btn,
 .button-transparent {
   border-radius: 30px;
-  border: 1px solid #2d2e32;
-  color: #2d2e32;
+  border: 1px solid #a97fe6;
+  color: #a97fe6;
   height: 48px;
   padding: 0 30px;
   font-weight: 700;
@@ -172,8 +152,8 @@ button {
 }
 
 .secondary-btn:hover {
-  border: 1px solid #6b6b6b;
-  color: #6b6b6b;
+  border: 1px solid white;
+  color: white;
 }
 
 .button-trans-gray {
@@ -203,11 +183,11 @@ button {
 }
 
 .secondary-color {
-  color: #3ba5ac;
+  color: #0c1533;
 }
 
 .brand-color {
-  background: #3ba5ac;
+  background: #32429c;
 }
 
 .button-trans-gray {
@@ -222,13 +202,13 @@ select:focus {
 }
 
 button:hover {
-  color: rgb(84, 110, 157);
+  color: #0c1533;
 }
 
 .sub-title {
   font-weight: bold;
   font-size: 20px;
-  color: #05b298;
+  color: #d7dae5;
 }
 
 .box-shadow {

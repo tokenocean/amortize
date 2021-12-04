@@ -91,12 +91,50 @@
   };
 </script>
 
+<style>
+  .container {
+    background-color: #ecf6f7;
+    height: auto;
+    min-height: 100vh;
+    margin: 0;
+    max-width: 100%;
+  }
+
+  input,
+  textarea {
+    @apply appearance-none border rounded py-4 px-3 text-gray-700 leading-tight;
+  }
+
+  label {
+    margin-bottom: 8px;
+  }
+
+  div {
+    position: relative;
+  }
+  .icon {
+    position: absolute;
+    pointer-events: none;
+    right: 15px;
+    top: 15px;
+    font-size: 20px;
+    color: #0ad4e3;
+  }
+
+  @media only screen and (max-width: 1024px) {
+    .container {
+      background: none;
+      margin-bottom: 200px;
+    }
+  }
+</style>
+
 <div class="container mx-auto pt-5 md:pt-20">
   {#if form}
     <div
       class="mb-4 w-full sm:max-w-3xl md:shadow rounded-xl md:p-10 m-auto lg:flex-row  bg-white"
     >
-      <a class="block mb-6 text-midblue" href={`/${$session.user.username}`}>
+      <a class="block mb-6 text-turquoise" href={`/${$session.user.username}`}>
         <div class="flex">
           <Fa icon={faChevronLeft} class="my-auto mr-1" />
           <div>Back</div>
@@ -174,7 +212,7 @@
           on:click={() => fileInput.click()}
         >
           <Avatar size="xl" src={preview || $session.user.avatar_url} />
-          <button class="text-lightblue mt-5"
+          <button class="text-blueberry mt-5"
             >CHANGE AVATAR
             <Fa icon={faImage} pull="right" class="mt-1 ml-2" /></button
           >
