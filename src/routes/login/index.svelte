@@ -84,9 +84,9 @@
 
 </style>
 
-<div class="form-container bg-lightblue px-4">
-  <form class="mb-6" on:submit|preventDefault={login} autocomplete="off">
-    <h2 class="mb-8">Sign In</h2>
+<div class="form-container bg-blueberry px-4">
+  <form class="mb-6 text-primary" on:submit|preventDefault={login} autocomplete="off">
+    <h2 class="mb-8 text-primary">Sign In</h2>
     <div class="flex flex-col mb-4">
       <label class="mb-2 font-medium" for="first_name">Email or username</label>
       <input bind:value={email} bind:this={emailInput} autocapitalize="off" />
@@ -111,11 +111,11 @@
         </button>
       </div>
     </div>
-    <a href="/forgot-password" class="block w-full text-midblue">Forgot
+    <a href="/forgot-password" class="block w-full text-turquoise">Forgot
       password?</a>
     <div class="flex my-5 justify-end">
       <button class="primary-btn w-full" type="submit">Sign In</button>
     </div>
-    <a href="/register" class="text-midblue">Don't have an account? Sign up</a>
+    <a href="/register" class="text-turquoise">Don't have an account? Sign up</a>
   </form>
 </div>

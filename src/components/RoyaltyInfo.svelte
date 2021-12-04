@@ -15,7 +15,7 @@
   <div class="mb-6">
     <div class="text-xs cursor-pointer mb-2" on:click={() => (show = !show)}>
       <div class="flex">
-        <i class="text-midblue text-xs mr-1 my-auto">
+        <i class="text-turquoise text-xs mr-1 my-auto">
           <Fa icon={faGem} />
         </i>
         <div class="my-auto">Royalties</div>

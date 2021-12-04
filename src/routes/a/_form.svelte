@@ -69,8 +69,8 @@
   input[type="checkbox"]:checked {
     appearance: none;
     border: 5px solid #fff;
-    outline: 2px solid #6ed8e0;
-    background-color: #6ed8e0;
+    outline: 2px solid #0ad4e3;
+    background-color: #0ad4e3;
     padding: 2px;
     border-radius: 0;
   }
@@ -125,7 +125,7 @@
           <div class="mr-2">Ticker</div>
           <div class="mt-1 mb-0">
             <span class="tooltip">
-              <i class="text-midblue text-xl">
+              <i class="text-turquoise text-xl">
                 <Fa icon={faQuestionCircle} />
               </i>
               <span class="tooltip-text bg-gray-100 shadow ml-4 rounded">The

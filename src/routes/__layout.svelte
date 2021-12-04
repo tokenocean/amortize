@@ -18,7 +18,6 @@
       props,
     };
   }
-
 </script>
 
 <script>
@@ -59,28 +58,28 @@
   onMount(() => {
     if (!$password) $password = window.sessionStorage.getItem("password");
   });
-
 </script>
-
-<style global src="../main.css">
-</style>
 
 <svelte:window bind:scrollY={y} />
 
 <Head metadata={branding.meta} />
 
 <Snack />
-
-<Sidebar bind:open />
-<div class={y > 50 ? 'sticky' : ''}>
-  <Navbar bind:sidebar={open} />
-</div>
-<Dialog />
-
-<main>
-  <div class="mx-auto min-h-screen">
-    <slot />
+<div class="bg-brand">
+  <Sidebar bind:open />
+  <div class={y > 50 ? "sticky" : ""}>
+    <Navbar bind:sidebar={open} />
   </div>
-</main>
+  <Dialog />
 
-<Footer />
+  <main>
+    <div class="mx-auto min-h-screen">
+      <slot />
+    </div>
+  </main>
+
+  <Footer />
+</div>
+
+<style global src="../main.css">
+</style>

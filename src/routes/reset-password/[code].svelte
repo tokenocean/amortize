@@ -62,7 +62,7 @@
   }
 </style>
 
-<div class="form-container bg-lightblue">
+<div class="form-container bg-blueberry">
   <form class="mb-6" on:submit|preventDefault={reset} autocomplete="off">
     <h2 class="mb-8">Reset password</h2>
     <div class="flex flex-col mb-4">
@@ -74,7 +74,7 @@
         bind:this={ref} />
     </div>
     <button class="primary-btn w-full mb-4" type="submit">Confirm</button>
-    <a href="/login" class="text-midblue">
+    <a href="/login" class="text-turquoise">
       <div class="flex">
         <Fa icon={faChevronLeft} class="my-auto mr-1" />
         <div>Back to sign in</div>

@@ -7,7 +7,7 @@
   svg {
     min-height: 20px;
     transition: transform 0.3s ease-in-out;
-    color: #2d2e32;
+    color: #d7dae5;
   }
 
   svg line {

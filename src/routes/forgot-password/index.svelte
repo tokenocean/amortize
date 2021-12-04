@@ -55,9 +55,9 @@
   }
 </style>
 
-<div class="form-container bg-lightblue" key={$page.path}>
+<div class="form-container bg-blueberry text-primary" key={$page.path}>
   <form class="mb-6" on:submit|preventDefault={forgot} autocomplete="off">
-    <h2 class="mb-8">Recover password</h2>
+    <h2 class="mb-8 text-primary">Recover password</h2>
     {#if sending}
       <p class="my-4">
         Thank you, please check your email for the recovery link.
@@ -74,7 +74,7 @@
         <button class="primary-btn ml-auto mb-4" type="submit">Send</button>
       </div>
     {/if}
-    <a href="/login" class="text-midblue">
+    <a href="/login" class="text-turquoise">
       <div class="flex">
         <Fa icon={faChevronLeft} class="my-auto mr-1" />
         <div>Back to sign in</div>

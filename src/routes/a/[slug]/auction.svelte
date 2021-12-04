@@ -459,15 +459,15 @@
   input[type="checkbox"]:checked {
     appearance: none;
     border: 5px solid #fff;
-    outline: 2px solid #6ed8e0;
-    background-color: #6ed8e0;
+    outline: 2px solid #0ad4e3;
+    background-color: #0ad4e3;
     padding: 2px;
     border-radius: 0;
   }
 
   input[type="radio"]:checked {
     appearance: none;
-    border: 7px solid #6ed8e0;
+    border: 7px solid #0ad4e3;
     background-color: #fff;
     padding: 2px;
     border-radius: 100%;
@@ -488,7 +488,7 @@
 
 <div class="container mx-auto md:p-20">
   <div class="w-full max-w-4xl mx-auto bg-white md:p-10 rounded-xl">
-    <a class="block mb-6 text-midblue" href={`/a/${artwork.slug}`}>
+    <a class="block mb-6 text-turquoise" href={`/a/${artwork.slug}`}>
       <div class="flex">
         <Fa icon={faChevronLeft} class="my-auto mr-1" />
         <div>Back</div>
@@ -534,7 +534,7 @@
             <div class="relative mt-1 rounded-md w-2/3 mr-6">
               <label for="price">Price
                 <span class="tooltip">
-                  <i class="text-midblue text-xl tooltip">
+                  <i class="text-turquoise text-xl tooltip">
                     <Fa icon={faQuestionCircle} pull="right" class="mt-1" />
                   </i>
                   <span class="tooltip-text bg-gray-100 shadow ml-4 rounded">
@@ -574,7 +574,7 @@
                       disabled={auction_underway} />
                     <span class="ml-3 text-xl">Royalty Recipients</span>
                     <span class="tooltip">
-                      <i class="ml-3 text-midblue text-xl tooltip">
+                      <i class="ml-3 text-turquoise text-xl tooltip">
                         <Fa icon={faQuestionCircle} pull="right" class="mt-1" />
                       </i>
                       <span
@@ -666,7 +666,7 @@
                     <label>
                       Reserve price
                       <span class="tooltip">
-                        <i class="ml-3 text-midblue text-xl tooltip">
+                        <i class="ml-3 text-turquoise text-xl tooltip">
                           <Fa
                             icon={faQuestionCircle}
                             pull="right"

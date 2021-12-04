@@ -12,10 +12,15 @@ module.exports = {
     },
     extend: {
       colors: {
-        primary: "#8feef5",
-        secondary: "#3ba5ac",
-      } 
-    } 
+        brand: "#32429c",
+        primary: "#0c1533",
+        greyOne: "#d7dae5",
+        greyTwo: "#575d66",
+        turquoise: "#0ad4e3",
+        lavender: "#a97fe6",
+        blueberry: "#5082f7"
+      }
+    }
   },
   variants: {
     borderWidth: ["responsive", "hover", "focus"],

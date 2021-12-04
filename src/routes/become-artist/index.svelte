@@ -139,7 +139,7 @@
     right: 15px;
     top: 15px;
     font-size: 20px;
-    color: #6ed8e0;
+    color: #0ad4e3;
   }
 
   @media only screen and (max-width: 1024px) {
@@ -155,7 +155,7 @@
   {#if form && $user}
     <div
       class="mb-4 w-full max-w-5xl md:shadow rounded-xl md:p-10 m-auto lg:flex-row bg-white">
-      <a class="block mb-6 text-midblue" href={`/u/${$user.username}`}>
+      <a class="block mb-6 text-turquoise" href={`/u/${$user.username}`}>
         <div class="flex">
           <Fa icon={faChevronLeft} class="my-auto mr-1" />
           <div>Back</div>
