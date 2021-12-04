@@ -68,7 +68,7 @@
   <form on:submit|preventDefault={submit}>
     <div class="flex">
       <input
-        class="lg:w-1/3 border-0 border-b-2 rounded border-lightblue bg-blueberry text-greyOne"
+        class="lg:w-1/3 border-0 border-b-2 rounded border-lightblue bg-greyTwo text-lavender"
         placeholder="Search..."
         on:input={({ target: { value } }) => debounce(value)}
       />
