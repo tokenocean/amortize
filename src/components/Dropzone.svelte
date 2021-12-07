@@ -42,7 +42,7 @@
 
   #drop-area {
     cursor: pointer;
-    border: 2px solid #6ed8e0;
+    border: 2px solid #0ad4e3;
     border-radius: 10px;
     width: 80%;
     max-width: 350px;
@@ -56,7 +56,7 @@
   }
 
   #drop-area.highlight {
-    border-color: #6ed8e0;
+    border-color: #0ad4e3;
   }
 
   #fileElem {
@@ -91,7 +91,7 @@
     <form class="text-center">
       <div class="flex justify-center flex-col align-center h-full">
         <span class="uppercase">{title}</span>
-        <span class="mx-auto text-center mt-4 text-5xl text-lightblue">
+        <span class="mx-auto text-center mt-4 text-5xl text-blueberry">
           <Fa icon={faCloudUploadAlt} />
         </span>
       </div>

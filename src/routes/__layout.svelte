@@ -18,7 +18,6 @@
       props,
     };
   }
-
 </script>
 
 <script>
@@ -63,9 +62,6 @@
   });
 </script>
 
-<style global src="../main.css">
-</style>
-
 <svelte:window bind:scrollY={y} />
 
 {#if !($page.path.includes('/a/') && $page.path.split('/').length === 3)}
@@ -73,17 +69,21 @@
 {/if}
 
 <Snack />
-
-<Sidebar bind:open />
-<div class={y > 50 ? 'sticky' : ''}>
-  <Navbar bind:sidebar={open} />
-</div>
-<Dialog />
-
-<main>
-  <div class="mx-auto min-h-screen">
-    <slot />
+<div class="bg-brand">
+  <Sidebar bind:open />
+  <div class={y > 50 ? "sticky" : ""}>
+    <Navbar bind:sidebar={open} />
   </div>
-</main>
+  <Dialog />
 
-<Footer />
+  <main>
+    <div class="mx-auto min-h-screen">
+      <slot />
+    </div>
+  </main>
+
+  <Footer />
+</div>
+
+<style global src="../main.css">
+</style>

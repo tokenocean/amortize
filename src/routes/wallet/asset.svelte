@@ -38,7 +38,7 @@
     background: #31373e;
   }
   .border-blue {
-    border-color: #6ed8e0;
+    border-color: #0ad4e3;
   }
 
   .active {
@@ -49,7 +49,7 @@
 {#if $balances}
   <div class="container mx-auto">
     <div class="mb-5">
-      <a href="/wallet" class="text-midblue">        <div class="flex">
+      <a href="/wallet" class="text-turquoise">        <div class="flex">
           <Fa icon={faChevronLeft} class="my-auto mr-1" />
           <div>Back</div>
         </div>

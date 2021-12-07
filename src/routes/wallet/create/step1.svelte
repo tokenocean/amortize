@@ -25,20 +25,20 @@
 
   <ul class="flex flex-col mb-10">
     <li class="flex">
-      <i class="text-lightblue">
+      <i class="text-blueberry">
         <Fa icon={faStickyNote} /></i>
       <span class="-mt-1">Write on actual paper instead of keeping it in a
         digital format in your device.</span>
     </li>
     <li class="flex">
-      <i class="text-lightblue">
+      <i class="text-blueberry">
         <Fa icon={faLock} />
       </i>
       <span class="-mt-1">Wait until you are on a personal device and in a
         private environment.</span>
     </li>
     <li class="flex">
-      <i class="text-lightblue">
+      <i class="text-blueberry">
         <Fa icon={faWallet} />
       </i>
       <span class="-mt-1">The backup phrase is essential to restore your wallet.

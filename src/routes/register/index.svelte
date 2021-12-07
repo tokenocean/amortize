@@ -87,7 +87,7 @@
 
 </style>
 
-<div class="form-container bg-lightblue px-4">
+<div class="form-container bg-blueberry px-4 text-primary">
   <form class="mb-6" on:submit|preventDefault={submit} autocomplete="off">
     {#if loading}
       <ProgressLinear />
@@ -101,7 +101,7 @@
         <a href="/login" class="text-secondary">Continue to sign in page</a>
       </p>
     {:else}
-      <h2 class="mb-8">Sign up</h2>
+      <h2 class="mb-8 text-primary">Sign up</h2>
       <div class="flex flex-col mb-4">
         <label
           class="mb-2 font-medium text-gray-600"
@@ -164,7 +164,7 @@
         <button class="primary-btn w-full" type="submit">Register</button>
       </div>
 
-      <a href="/login" class="text-midblue">
+      <a href="/login" class="text-turquoise">
         Already have an account? Sign in</a>
     {/if}
   </form>

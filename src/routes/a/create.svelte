@@ -230,7 +230,6 @@
     loading = true;
 
     try {
-      await requireLogin();
 
       let { ticker } = artwork;
       let tickers = [];
@@ -337,7 +336,7 @@
   <div
     class="w-full mx-auto max-w-5xl bg-white md:p-14 rounded-xl submitArtwork boxShadow">
     <a
-      class="block mb-6 text-midblue"
+      class="block mb-6 text-turquoise"
       href="."
       on:click|preventDefault={() => window.history.back()}>
       <div class="flex">

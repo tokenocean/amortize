@@ -86,7 +86,7 @@
     background: #31373e;
   }
   .border-blue {
-    border-color: #6ed8e0;
+    border-color: #0ad4e3;
   }
 
   .bg-btc {

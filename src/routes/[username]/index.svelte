@@ -98,14 +98,14 @@
 
   .hover {
     @apply border-b-2;
-    border-bottom: 3px solid #6ed8e0;
+    border-bottom: 3px solid #a97fe6;
   }
 
   .tabs div {
     @apply mb-auto h-10 mx-2 md:mx-4;
     &:hover {
       @apply border-b-2;
-      border-bottom: 3px solid #6ed8e0;
+      border-bottom: 3px solid #a97fe6;
     }
   }
 
@@ -140,7 +140,7 @@
               <Avatar size="large" user={subject} />
               <div class="ml-12">
                 <h3>{subject.full_name}</h3>
-                <div class="text-gray-600">@{subject.username}</div>
+                <div class="text-lavender">@{subject.username}</div>
               </div>
             </div>
             <div class="flex mt-5">
