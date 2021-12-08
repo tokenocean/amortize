@@ -102,14 +102,14 @@
           <div>Back</div>
         </div>
       </a>
-      <h2 class="mb-10">Edit Profile</h2>
+      <h2 class="mb-10 text-primary">Edit Profile</h2>
       <div class="flex mt-4 m-auto flex-col-reverse lg:flex-row">
         <form
           class="mb-6 flex-grow xl:mr-8"
           on:submit|preventDefault={submit}
           autocomplete="off"
         >
-          <div class="flex flex-col mb-4">
+          <div class="flex flex-col mb-4 text-primary">
             <label for="name">Name</label>
             <input
               id="name"
@@ -117,7 +117,7 @@
               bind:value={form.full_name}
             />
           </div>
-          <div class="flex flex-col mb-4">
+          <div class="flex flex-col mb-4 text-primary">
             <label for="username">Username</label>
             <input placeholder="Username" bind:value={form.username} />
           </div>
@@ -151,7 +151,7 @@
             </i>
             <input placeholder="example.com" bind:value={form.website} />
           </div>
-          <div class="flex flex-col mb-4">
+          <div class="flex flex-col mb-4 text-primary">
             <label for="bio">Bio</label>
             <textarea placeholder="" bind:value={form.bio} />
           </div>
