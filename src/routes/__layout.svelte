@@ -129,4 +129,8 @@
     @apply font-bold pb-14 text-4xl text-left;
     color: #133e7c;
   }
+
+  .sticky {
+    @apply bg-brand;
+  }
 </style>

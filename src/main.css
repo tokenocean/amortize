@@ -240,7 +240,6 @@ button:hover {
   top: 0;
   left: 0;
   width: 100%;
-  @apply bg-brand;
   box-shadow: 0px 0px 5px 0px #a97fe6;
   z-index: 300;
 }
