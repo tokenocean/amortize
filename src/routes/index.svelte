@@ -1,32 +1,27 @@
 <script context="module">
-  export async function load({ fetch }) {
+  export async function load({ fetch, page }) {
     const props = await fetch(`/artworks/recent.json`).then((r) => r.json());
 
     return {
+      maxage: 90,
       props,
     };
   }
 </script>
 
 <script>
-  import { onMount, onDestroy } from "svelte";
+  import { onDestroy } from "svelte";
   import { query } from "$lib/api";
   import { Summary } from "$comp";
   import { fade } from "svelte/transition";
+  import { user } from "$lib/store";
   import { Activity, RecentActivityCard, LatestPiecesCard } from "$comp";
   import { err } from "$lib/utils";
   import branding from "$lib/branding";
-  import { prefetch } from "$app/navigation";
-  import { browser } from "$app/env";
-
-  onMount(() => browser && prefetch("/market"));
 
   export let featured;
   export let recent;
   export let latest;
-
-  let current = 0;
-  $: artwork = featured && featured[current] && featured[current].artwork;
 
   let interval = setInterval(() => {
     if (!featured) return;
@@ -35,31 +30,33 @@
   }, 6000);
 
   onDestroy(() => clearInterval(interval));
+
+  let current = 0;
 </script>
 
 <div class="flex header-container mx-auto justify-center marg-bottom">
   <div class="header text-center">
     <h1 class="text-left md:text-center md:w-full">
       {branding.projectName}
-      <br />digital art
+      <br />digital real estate
     </h1>
     <h5 class="md:max-w-lg mx-auto text-left md:text-center">
-      Upload, collect, and transact rare digital art on the Liquid Network
+      There's bitcoin in your home!
     </h5>
     <a class="primary-btn" href={`/market`}>Start exploring</a>
   </div>
 </div>
 
-{#if artwork}
+{#if featured[current]}
   <div class="flex secondary-header marg-bottom">
     <div
       class="container flex mx-auto flex-col justify-end md:justify-center secondary-header-text m-10 pl-6 z-10"
     >
       <div class="blur-bg">
-        <h2>{artwork.artist.username}</h2>
+        <h2>{featured[current].artwork.artist.username}</h2>
         <p>
-          {artwork.title}
-          <a href="/a/{artwork.slug}">
+          {featured[current].artwork.title}
+          <a href="/a/{featured[current].artwork.slug}">
             <button
               class="button-transparent header-button border mt-10"
               style="border-color: white; color: white"
@@ -71,7 +68,7 @@
       </div>
     </div>
 
-    {#if artwork.filetype.includes("video")}
+    {#if featured[current].artwork.filetype.includes("video")}
       <video
         in:fade
         out:fade
@@ -80,9 +77,7 @@
         muted
         playsinline
         loop
-        src={`/api/public/${artwork.filename}.${
-          artwork.filetype.split("/")[1]
-        }`}
+        src={`/api/ipfs/${featured[current].artwork.filename}`}
         :key={featured[current].id}
       />
     {:else}
@@ -90,10 +85,8 @@
         in:fade
         out:fade
         class="lazy cover absolute secondary-header"
-        alt={artwork.title}
-        src={`/api/public/${artwork.filename}.${
-          artwork.filetype.split("/")[1]
-        }`}
+        alt={featured[current].artwork.title}
+        src={`/api/ipfs/${featured[current].artwork.filename}`}
       />
     {/if}
   </div>
@@ -137,7 +130,7 @@
   .header h5 {
     font-size: 22px;
     line-height: 36px;
-    color: #2d2e32;
+    color: #d7dae5;
     margin-top: 24px;
     margin-bottom: 34px;
   }
