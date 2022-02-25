@@ -14,6 +14,7 @@ module.exports = {
         primary: "#0c1533",
         greyOne: "#d7dae5",
         greyTwo: "#575d66",
+        midblue: "#0ad4e3",
         turquoise: "#0ad4e3",
         lavender: "#a97fe6",
         blueberry: "#5082f7",
