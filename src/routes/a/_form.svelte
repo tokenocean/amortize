@@ -57,37 +57,6 @@
   };
 </script>
 
-<style>
-  .tooltip {
-    cursor: pointer;
-  }
-  .tooltip .tooltip-text {
-    display: none;
-    padding: 15px;
-    position: absolute;
-    z-index: 100;
-    width: 300px;
-    font-style: normal;
-  }
-  .tooltip:hover .tooltip-text {
-    display: block;
-  }
-  input[type="checkbox"]:checked {
-    appearance: none;
-    border: 5px solid #fff;
-    outline: 2px solid #0ad4e3;
-    background-color: #0ad4e3;
-    padding: 2px;
-    border-radius: 0;
-  }
-
-  input,
-  textarea {
-    @apply rounded-lg;
-  }
-
-</style>
-
 <form class="flex flex-col w-full mb-6 mt-20" on:submit autocomplete="off">
   <div class="flex flex-col mb-6">
     <input
@@ -135,7 +104,7 @@
           <div class="mr-2">Ticker</div>
           <div class="mt-1 mb-0">
             <span class="tooltip">
-              <i class="text-turquoise text-xl">
+              <i class="text-midblue text-xl">
                 <Fa icon={faQuestionCircle} />
               </i>
               <span class="tooltip-text bg-gray-100 shadow ml-4 rounded"
