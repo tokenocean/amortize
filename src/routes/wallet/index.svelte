@@ -61,41 +61,6 @@
   onDestroy(() => clearTimeout(poll));
 </script>
 
-<style>
-  .dark-red {
-    background: #2b0208;
-  }
-  .dark-green {
-    background: #082527;
-  }
-  .dark-gray {
-    background: #31373e;
-  }
-  .border-blue {
-    border-color: #0ad4e3;
-  }
-
-  .bg-btc {
-    background: rgba(52, 190, 171, 0.25);
-  }
-  .border-btc {
-    border-color: #30bfad;
-  }
-
-  .light-color {
-    color: #f4f4f4;
-  }
-
-  .active {
-    @apply border-t-2 border-b-2 border-r-2 text-white;
-  }
-
-  button:disabled {
-    @apply text-gray-400 border-gray-400;
-  }
-
-</style>
-
 {#if $balances && $pending}
   <div class="w-full">
     {#if $assets.length > 1}

@@ -114,50 +114,12 @@
   };
 </script>
 
-<style>
-  .container {
-    background-color: #ecf6f7;
-    height: auto;
-    min-height: 100vh;
-    margin: 0;
-    max-width: 100%;
-  }
-
-  input,
-  textarea {
-    @apply appearance-none border rounded py-4 px-3 text-gray-700 leading-tight;
-  }
-
-  label {
-    margin-bottom: 8px;
-  }
-
-  div {
-    position: relative;
-  }
-  .icon {
-    position: absolute;
-    pointer-events: none;
-    right: 15px;
-    top: 15px;
-    font-size: 20px;
-    color: #0ad4e3;
-  }
-
-  @media only screen and (max-width: 1024px) {
-    .container {
-      background: none;
-      margin-bottom: 200px;
-    }
-  }
-
-</style>
-
 <div class="container mx-auto py-20">
   {#if form && $session.user}
     <div
-      class="mb-4 w-full max-w-5xl md:shadow rounded-xl md:p-10 m-auto lg:flex-row bg-white">
-      <a class="block mb-6 text-turquoise" href={`/${$session.user.username}`}>
+      class="mb-4 w-full max-w-5xl md:shadow rounded-xl md:p-10 m-auto lg:flex-row bg-white"
+    >
+      <a class="block mb-6 text-midblue" href={`/${$session.user.username}`}>
         <div class="flex">
           <Fa icon={faChevronLeft} class="my-auto mr-1" />
           <div>Back</div>
