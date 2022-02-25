@@ -55,6 +55,7 @@
     width: 80%;
     border: none;
     background: none;
+    color: white;
     padding: 0.5rem 1.2rem;
   }
 

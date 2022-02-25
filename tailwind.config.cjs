@@ -17,6 +17,7 @@ module.exports = {
         turquoise: "#0ad4e3",
         lavender: "#a97fe6",
         blueberry: "#5082f7",
+        lightblue: "#5082f7",
       },
     },
   },

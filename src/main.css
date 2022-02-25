@@ -39,7 +39,7 @@ body {
   font-weight: normal;
   font-size: 18px;
   line-height: 32px;
-  color: #d7dae5;
+  color: white;
 }
 
 @media (max-width: 768px) {
@@ -52,7 +52,6 @@ h1,
 h2,
 h3 {
   font-family: "Poppins-ExtraBold", sans-serif;
-  color: white;
   font-weight: bold;
 }
 
@@ -133,7 +132,7 @@ button {
   align-items: center;
   color: #444444;
   font-weight: bold;
-  background-color: #0ad4e3;
+  background-color: white;
 }
 
 .secondary-btn,

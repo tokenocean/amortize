@@ -42,7 +42,7 @@
   };
 </script>
 
-<div class="form-container bg-blueberry px-4 text-primary">
+<div class="form-container bg-blueberry px-4">
   <form class="mb-6" on:submit|preventDefault={submit} autocomplete="off">
     {#if loading}
       <ProgressLinear />
@@ -56,11 +56,9 @@
         <a href="/login" class="text-secondary">Continue to sign in page</a>
       </p>
     {:else}
-      <h2 class="mb-8 text-primary">Sign up</h2>
+      <h2 class="mb-8">Sign up</h2>
       <div class="flex flex-col mb-4">
-        <label class="mb-2 font-medium text-gray-600" for="first_name"
-          >Email</label
-        >
+        <label class="mb-2 font-medium" for="first_name">Email</label>
         <input
           id="email"
           name="email"
@@ -70,9 +68,7 @@
         />
       </div>
       <div class="flex flex-col mb-4">
-        <label class="mb-2 font-medium text-gray-600" for="first_name"
-          >Username</label
-        >
+        <label class="mb-2 font-medium" for="first_name">Username</label>
         <input
           id="username"
           name="username"
@@ -82,9 +78,7 @@
         />
       </div>
       <div class="flex flex-col mb-4">
-        <label class="mb-2 font-medium text-gray-600" for="last_name"
-          >Password</label
-        >
+        <label class="mb-2 font-medium" for="last_name">Password</label>
         <div class="relative">
           {#if show}
             <input
@@ -125,52 +119,7 @@
         <button class="primary-btn w-full" type="submit">Register</button>
       </div>
 
-      <a href="/login" class="text-turquoise">
-        Already have an account? Sign in</a
-      >
+      <a href="/login"> Already have an account? Sign in</a>
     {/if}
   </form>
 </div>
-
-<style>
-  .form-container {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .form-container form {
-    width: 100%;
-    max-width: 450px;
-    background-color: white;
-    padding: 40px;
-    box-shadow: 0 1px 5px rgb(0 0 0 / 18%);
-    border-radius: 10px;
-  }
-
-  input {
-    @apply appearance-none border rounded text-gray-700 leading-tight;
-    padding: 0;
-    padding: 10px;
-  }
-
-  span {
-    cursor: pointer;
-  }
-
-  @media only screen and (max-width: 640px) {
-    .form-container {
-      background: none;
-      height: auto;
-    }
-
-    .form-container form {
-      box-shadow: none;
-      padding: 0.2rem;
-      margin-top: 50px;
-    }
-  }
-</style>

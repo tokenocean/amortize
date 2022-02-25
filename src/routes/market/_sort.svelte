@@ -5,21 +5,7 @@
 
 <div class="sort-container">
   <select
-    class="rounded-full appearance-none bg-gray-100 px-8"
-    bind:value={$sortCriteria}
-  >
-    <option value="newest">Newest</option>
-    <option value="oldest">Oldest</option>
-    <option value="lowest">Lowest price</option>
-    <option value="highest">Highest price</option>
-    <option value="ending_soon">Ending soon</option>
-    <option value="most_viewed">Most viewed</option>
-  </select>
-</div>
-
-<div class="sort-container">
-  <select
-    class="rounded-full appearance-none bg-greyOne text-black px-8"
+    class="rounded-full appearance-none text-black px-8"
     bind:value={$sortCriteria}
   >
     <option value="newest">Newest</option>

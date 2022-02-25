@@ -33,48 +33,7 @@
   };
 </script>
 
-<style>
-  #fileElem {
-    position: fixed;
-    top: -100em;
-  }
-
-  #drop-area {
-    cursor: pointer;
-    border: 2px solid #0ad4e3;
-    border-radius: 10px;
-    width: 80%;
-    max-width: 350px;
-    max-height: 350px;
-    margin: 100px auto;
-    margin-top: 30px;
-  }
-
-  form {
-    height: 320px;
-  }
-
-  #drop-area.highlight {
-    border-color: #0ad4e3;
-  }
-
-  #fileElem {
-    position: fixed;
-    top: -100em;
-  }
-
-  @media only screen and (max-width: 800px) {
-    #drop-area {
-      width: 100%;
-      max-width: 100%;
-      margin: 0;
-      margin-top: 50px;
-    }
-  }
-
-</style>
-
-{#if style === 'box'}
+{#if style === "box"}
   <div
     id="drop-area"
     on:click={open}
