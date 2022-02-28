@@ -158,7 +158,7 @@
       The Absolute Must Have Tool For Any Real Estate Investor.
     </p>
     <p class="text-greyTwo">
-      View Cash Flow, Cap Rate. Appreciation and Yield - With One Click.
+      View Cash Flow, Cap Rate, Appreciation and Yield - With One Click.
     </p>
     <button
       type="button"
