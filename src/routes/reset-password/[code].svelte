@@ -26,11 +26,11 @@
   $: if (ref) pageChange($page);
 </script>
 
-<div class="form-container bg-blueberry">
+<div class="form-container bg-blueberry text-white">
   <form class="mb-6" on:submit|preventDefault={reset} autocomplete="off">
     <h2 class="mb-8">Reset password</h2>
     <div class="flex flex-col mb-4">
-      <label class="mb-2 font-medium text-gray-600" for="password"
+      <label class="mb-2 font-medium text-white" for="password"
         >New password</label
       >
       <input
@@ -63,7 +63,7 @@
   .form-container form {
     width: 100%;
     max-width: 450px;
-    background-color: white;
+
     padding: 40px;
     box-shadow: 0 1px 5px rgb(0 0 0 / 18%);
     border-radius: 10px;

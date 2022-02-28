@@ -100,9 +100,9 @@
 {/if}
 
 <Snack />
-<div class="bg-brand">
+<div class="bg-white">
   <Sidebar bind:open />
-  <div class={y > 50 ? "sticky" : ""}>
+  <div class={y > 50 ? "sticky bg-white" : "bg-white"}>
     <Navbar bind:sidebar={open} />
   </div>
   <Dialog />
@@ -156,14 +156,12 @@
 
   @media only screen and (max-width: 640px) {
     .form-container {
-      background: none;
       height: auto;
     }
 
     .form-container form {
       box-shadow: none;
-      padding: 0.2rem;
-      margin-top: 50px;
+      padding: 1rem;
     }
   }
 </style>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_34" data-name="Rectangle 34" width="32" height="32" transform="translate(363 1326)"/>
+    </clipPath>
+  </defs>
+  <g id="Total_Return_In_5_Years" data-name="Total Return In 5 Years" transform="translate(-363 -1326)" clip-path="url(#clip-path)">
+    <g id="product-return" transform="translate(363.001 1326)">
+      <path id="Path_127" data-name="Path 127" d="M30.359,14.667A14.5,14.5,0,0,0,18.238,1.733L19.375.9A.5.5,0,1,0,18.786.1L16.644,1.659a.5.5,0,0,0-.111.7l1.673,2.293a.5.5,0,1,0,.807-.59l-.981-1.347a13.463,13.463,0,0,1-.746,26.7.5.5,0,0,0,.047,1h.049A14.425,14.425,0,0,0,30.359,14.667Z"/>
+      <path id="Path_128" data-name="Path 128" d="M15.475,29.643,13.8,27.35a.5.5,0,0,0-.808.59l1,1.365a13.416,13.416,0,0,1,.72-26.62.5.5,0,0,0,.45-.545.493.493,0,0,0-.546-.449,14.414,14.414,0,0,0-.867,28.589l-1.119.817a.5.5,0,1,0,.589.807l2.142-1.562a.5.5,0,0,0,.109-.7Z"/>
+      <path id="Path_129" data-name="Path 129" d="M23.374,8.127H8.627a.5.5,0,0,0-.5.5V23.374a.5.5,0,0,0,.5.5H23.374a.5.5,0,0,0,.5-.5V8.627A.5.5,0,0,0,23.374,8.127Zm-8.907,1h3.067v3.391H14.467Zm8.407,13.747H9.127V9.127h4.34v3.891a.5.5,0,0,0,.5.5h4.067a.5.5,0,0,0,.5-.5V9.127h4.34Z"/>
+    </g>
+  </g>
+</svg>

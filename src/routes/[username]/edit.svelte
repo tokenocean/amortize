@@ -91,12 +91,12 @@
   };
 </script>
 
-<div class="container mx-auto pt-5 md:pt-20">
+<div class="min-h-screen container mx-auto py-10">
   {#if form}
     <div
-      class="mb-4 w-full sm:max-w-3xl md:shadow rounded-xl md:p-10 m-auto lg:flex-row  bg-white"
+      class="mb-4 w-full sm:max-w-3xl md:shadow rounded-xl md:p-10 m-auto lg:flex-row bg-white p-3"
     >
-      <a class="block mb-6 text-midblue" href={`/${$session.user.username}`}>
+      <a class="block mb-6 text-blueberry" href={`/${$session.user.username}`}>
         <div class="flex">
           <Fa icon={faChevronLeft} class="my-auto mr-1" />
           <div>Back</div>
@@ -196,7 +196,7 @@
 
 <style>
   .container {
-    background-color: #ecf6f7;
+    background-color: #5082f7;
     height: auto;
     min-height: 100vh;
     margin: 0;
@@ -221,12 +221,12 @@
     right: 15px;
     top: 15px;
     font-size: 20px;
-    color: #6ed8e0;
+    color: #5082f7;
   }
 
   input[type="checkbox"] {
     appearance: none;
-    border: 5px solid #6ed8e0;
+    border: 5px solid #5082f7;
     outline: 1px solid #fff;
     background-color: #fff;
     padding: 2px;
@@ -237,14 +237,7 @@
 
   input[type="checkbox"]:checked {
     border: 5px solid #fff;
-    outline: 2px solid #6ed8e0;
-    background-color: #6ed8e0;
-  }
-
-  @media only screen and (max-width: 1024px) {
-    .container {
-      background: none;
-      margin-bottom: 200px;
-    }
+    outline: 2px solid #5082f7;
+    background-color: #5082f7;
   }
 </style>

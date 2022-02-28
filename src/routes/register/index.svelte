@@ -42,8 +42,8 @@
   };
 </script>
 
-<div class="form-container bg-blueberry px-4">
-  <form class="mb-6" on:submit|preventDefault={submit} autocomplete="off">
+<div class="min-h-screen form-container bg-blueberry px-4">
+  <form on:submit|preventDefault={submit} autocomplete="off">
     {#if loading}
       <ProgressLinear />
     {:else if registered}
@@ -53,7 +53,7 @@
       </p>
 
       <p class="mt-4">
-        <a href="/login" class="text-secondary">Continue to sign in page</a>
+        <a href="/login" class="text-turquoise">Continue to sign in page</a>
       </p>
     {:else}
       <h2 class="mb-8">Sign up</h2>
@@ -105,21 +105,32 @@
             type="button"
             on:click|preventDefault|stopPropagation={() => (show = !show)}
           >
-            <Fa icon={show ? faEyeSlash : faEye} class="my-auto mr-1" />
+            <Fa
+              icon={show ? faEyeSlash : faEye}
+              class="text-black my-auto mr-1"
+            />
           </button>
         </div>
       </div>
       <span class="block w-full"
         >By signing up, you agree to the
-        <a href="/terms-and-conditions">Terms and Conditions</a>
+        <a href="/terms-and-conditions" class="text-turquoise"
+          >Terms and Conditions</a
+        >
         and
-        <a href="/privacy-policy">Privacy Policy</a></span
+        <a href="/privacy-policy" class="text-turquoise">Privacy Policy</a
+        ></span
       >
       <div class="flex my-5 justify-end">
-        <button class="primary-btn w-full" type="submit">Register</button>
+        <button
+          class="rounded-full bg-white p-2  font-semibold text-black w-full"
+          type="submit">Register</button
+        >
       </div>
 
-      <a href="/login"> Already have an account? Sign in</a>
+      <a href="/login" class="text-turquoise">
+        Already have an account? Sign in</a
+      >
     {/if}
   </form>
 </div>

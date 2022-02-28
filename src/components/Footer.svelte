@@ -11,84 +11,46 @@
   import { faRss } from "@fortawesome/free-solid-svg-icons";
 </script>
 
-<div class="bg-greyOne px-2 mt-24">
-  <div class="container footer mx-auto flex flex-wrap text-black pt-12">
+<div class="bg-greyOne px-2">
+  <div
+    class="w-full container footer mx-auto block xl:flex justify-between text-black py-10"
+  >
     <div
-      class="flex flex-col text-sm w-full lg:w-2/4 mb-10 order-last lg:order-first"
+      class="block text-center md:text-left md:flex justify-center items-center text-sm w-full mb-2 xl:mb-0"
     >
-      <a href="/"><img src="/logo-alt.svg" alt="logo" class="w-48" /></a>
-      <p class="mt-4">&copy;2021 {branding.projectName}</p>
+      <a href="/"><img src="/Logo_Header.svg" alt="logo" class="mx-auto" /></a>
+      <p class="ml-5 text-greyTwo">&copy; Copyright 2022</p>
     </div>
-    <div class="w-full lg:w-1/4 mb-10">
-      <h4 class="font-bold mb-4">Join Us</h4>
-      <ul class="list-none">
-        <li class="mb-2">
-          <a
-            target="_blank"
-            href={branding.urls.external.blog}
-            class="flex items-center"
-            ><div class="w-6 mr-1"><Fa icon={faRss} /></div>
-            Blog</a
-          >
+    <div class="w-full">
+      <ul
+        class="text-center list-none block md:flex justify-center items-center"
+      >
+        <li><a href="/help">Help | </a></li>
+        <li>
+          <a href="https://blockstream.com/liquid/">The Liquid Network | </a>
         </li>
-        <li class="mb-2">
-          <a
-            target="_blank"
-            href={branding.urls.external.twitter}
-            class="flex items-center"
-            ><div class="w-6 mr-1"><Fa icon={faTwitter} /></div>
-            Twitter</a
-          >
+        <li><a href="/privacy-policy">Privacy Policy | </a></li>
+        <li>
+          <a href="/terms-and-conditions">Terms of Service | </a>
         </li>
-        <li class="mb-2">
-          <a
-            target="_blank"
-            href={branding.urls.external.discord}
-            class="flex items-center"
-            ><div class="w-6 mr-1"><Fa icon={faDiscord} size="sm" /></div>
-            Discord</a
-          >
-        </li>
-        <li class="mb-2">
-          <a
-            target="_blank"
-            href={branding.urls.external.telegram}
-            class="flex items-center"
-            ><div class="w-6 mr-1"><Fa icon={faTelegramPlane} /></div>
-            Telegram</a
-          >
-        </li>
-        <li class="mb-2">
-          <a
-            target="_blank"
-            href={branding.urls.external.instagram}
-            class="flex items-center"
-            ><div class="w-6 mr-1"><Fa icon={faInstagramSquare} /></div>
-            Instagram</a
-          >
-        </li>
-        <li class="mb-2">
-          <a
-            target="_blank"
-            href={branding.urls.external.facebook}
-            class="flex items-center"
-            ><div class="w-6 mr-1"><Fa icon={faFacebook} /></div>
-            Facebook</a
-          >
-        </li>
-      </ul>
-    </div>
-    <div class="w-full lg:w-1/4 mb-10">
-      <h4 class="font-bold mb-4">Help</h4>
-      <ul class="list-none">
-        <li class="mb-2"><a href="/help">Help</a></li>
-        <li class="mb-2">
-          <a href="https://blockstream.com/liquid/">The Liquid Network</a>
-        </li>
-        <li class="mb-2"><a href="/privacy-policy">Privacy Policy</a></li>
-        <li class="mb-2">
-          <a href="/terms-and-conditions">Terms of Service</a>
-        </li>
+        <div class="flex justify-center items-center mt-4 md:mt-0">
+          <li>
+            <a target="_blank" href={branding.urls.external.twitter}
+              ><div class="ml-1 w-6"><Fa icon={faTwitter} /></div>
+            </a>
+          </li>
+
+          <li>
+            <a target="_blank" href={branding.urls.external.instagram}
+              ><div class="w-6"><Fa icon={faInstagramSquare} /></div>
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href={branding.urls.external.facebook}
+              ><div class="w-6"><Fa icon={faFacebook} /></div>
+            </a>
+          </li>
+        </div>
       </ul>
     </div>
   </div>

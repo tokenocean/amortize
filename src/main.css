@@ -3,15 +3,27 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: Montserrat;
-  font-weight: normal;
-  src: url("/font/Montserrat-Regular.ttf") format("opentype");
+  font-family: HelveticaNeueLTPro;
+  font-weight: bold;
+  src: url("/font/HelveticaNeueLTPro-Bd_0.otf") format("opentype");
 }
 
 @font-face {
-  font-family: Montserrat;
+  font-family: Kastelov-Axiforma;
   font-weight: bold;
-  src: url("/font/Montserrat-Bold.ttf") format("opentype");
+  src: url("/font/Kastelov-AxiformaBold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: Kastelov-AxiformaBook;
+  font-weight: normal;
+  src: url("/font/Kastelov-AxiformaBook.otf") format("opentype");
+}
+
+@font-face {
+  font-family: Kastelov-Axiforma;
+  font-weight: normal;
+  src: url("/font/Kastelov-AxiformaRegular.otf") format("opentype");
 }
 
 @font-face {
@@ -20,26 +32,24 @@
   src: url("/font/OpenSans-Regular.ttf") format("opentype");
 }
 
-@font-face {
-  font-family: OpenSans;
-  font-weight: bold;
-  src: url("/font/OpenSans-Bold.ttf") format("opentype");
-}
-
-@font-face {
-  font-family: Poppins-ExtraBold;
-  font-weight: bold;
-  src: url("/font/Poppins-ExtraBold.ttf") format("opentype");
-}
-
 body {
-  font-family: OpenSans, system-ui, -apple-system,
-    /* Firefox supports this but not yet `system-ui` */ "Segoe UI", Roboto,
-    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-family: Kastelov-Axiforma, system-ui, -apple-system,
+    /* Firefox supports this but not yet `system-ui` */ "Segoe UI", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji";
   font-weight: normal;
   font-size: 18px;
   line-height: 32px;
-  color: white;
+  color: black;
+}
+
+.text-4xl {
+  font-family: HelveticaNeueLTPro, sans-serif;
+}
+
+button,
+a,
+input {
+  font-family: OpenSans, sans-serif;
 }
 
 @media (max-width: 768px) {
@@ -51,8 +61,7 @@ body {
 h1,
 h2,
 h3 {
-  font-family: "Poppins-ExtraBold", sans-serif;
-  font-weight: bold;
+  font-family: "HelveticaNeueLTPro", sans-serif;
 }
 
 /* Mobile Phones */
@@ -130,16 +139,17 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #444444;
+  color: #5082f7;
   font-weight: bold;
   background-color: white;
+  border: 1px solid #5082f7;
 }
 
 .secondary-btn,
 .button-transparent {
   border-radius: 30px;
-  border: 1px solid #a97fe6;
-  color: #a97fe6;
+  border: 1px solid #5082f7;
+  color: #5082f7;
   height: 48px;
   padding: 0 30px;
   font-weight: 700;
@@ -150,9 +160,10 @@ button {
   align-items: center;
 }
 
+.primary-btn:hover,
 .secondary-btn:hover {
-  border: 1px solid white;
-  color: white;
+  color: #0c1533;
+  border: 1px solid #0c1533;
 }
 
 .button-trans-gray {

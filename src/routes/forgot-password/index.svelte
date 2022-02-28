@@ -16,9 +16,12 @@
   $: if (ref) pageChange($page);
 </script>
 
-<div class="form-container bg-blueberry text-primary" key={$page.url.pathname}>
+<div
+  class="min-h-screen form-container bg-blueberry text-white"
+  key={$page.url.pathname}
+>
   <form class="mb-6" on:submit|preventDefault={forgot} autocomplete="off">
-    <h2 class="mb-8 text-primary">Recover password</h2>
+    <h2 class="mb-8 text-white">Recover password</h2>
     {#if sending}
       <p class="my-4">
         Thank you, please check your email for the recovery link.
@@ -28,11 +31,14 @@
         We'll send a recovery link to the email associated with your account.
       </p>
       <div class="flex flex-col mb-4">
-        <label class="mb-2 font-medium text-gray-600" for="email">Email</label>
+        <label class="mb-2 font-medium text-white" for="email">Email</label>
         <input placeholder="Email" bind:value={email} bind:this={ref} />
       </div>
       <div class="flex">
-        <button class="primary-btn ml-auto mb-4" type="submit">Send</button>
+        <button
+          class="rounded-full bg-white px-4 py-2 font-semibold text-black ml-auto mb-4"
+          type="submit">Send</button
+        >
       </div>
     {/if}
     <a href="/login" class="text-turquoise">
@@ -57,28 +63,26 @@
   .form-container form {
     width: 100%;
     max-width: 450px;
-    background-color: white;
+
     padding: 40px;
     box-shadow: 0 1px 5px rgb(0 0 0 / 18%);
     border-radius: 10px;
   }
 
   input {
-    @apply appearance-none border rounded text-gray-700 leading-tight;
+    @apply appearance-none border rounded leading-tight;
     padding: 0;
     padding: 10px;
   }
 
   @media only screen and (max-width: 640px) {
     .form-container {
-      background: none;
       height: auto;
     }
 
     .form-container form {
       box-shadow: none;
-      padding: 0.2rem;
-      margin-top: 50px;
+      padding: 1rem;
     }
   }
 </style>

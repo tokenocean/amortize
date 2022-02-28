@@ -2,21 +2,20 @@
   import branding from "$lib/branding";
   import { session } from "$app/stores";
   import { Avatar, Search } from "$comp";
+  import Fa from "svelte-fa";
+  import { faUserCircle } from "@fortawesome/free-regular-svg-icons";
 
   export let open = false;
   let toggle = () => (open = !open);
 </script>
 
-<div class="flex justify-between items-center menu relative text-greyOne">
+<div class="flex justify-between items-center menu relative text-black">
   <Search suggest={false} />
   <a sveltekit:prefetch href="/market"
     ><button on:click={toggle}>Market</button></a
   >
   <a sveltekit:prefetch href="/activity"
     ><button on:click={toggle}>Activity</button></a
-  >
-  <a href={branding.urls.external.blog}
-    ><button on:click={toggle}>Blog</button></a
   >
   <a href="/help"><button on:click={toggle}>Help</button></a>
   {#if $session?.user}
@@ -28,14 +27,29 @@
         <Avatar user={$session.user} />
       </button></a
     >
-  {:else}<a href="/login"><button on:click={toggle}>Sign In</button></a>{/if}
+  {:else}<a href="/login"
+      ><button on:click={toggle} class="flex justify-center items-center"
+        ><Fa icon={faUserCircle} class="mr-2" />Sign In</button
+      ></a
+    >
+    <a href="/register" class="px-[20px]"
+      ><button
+        on:click={toggle}
+        type="button"
+        name="button"
+        class="bg-gradient-to-r from-lavender via-blueberry to-turquoise rounded-lg py-1 text-white"
+        >SIGN UP</button
+      ></a
+    >
+  {/if}
 </div>
 
 <style>
   .menu button {
     width: auto;
     text-align: left;
-    padding: 0 20px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .menu :global(.search) {
@@ -46,7 +60,7 @@
   }
 
   .menu :global(.search):focus-within {
-    border: 1px solid #5c5d60;
+    border: 1px solid #5082f7;
     border-radius: 30px;
   }
 
@@ -55,7 +69,7 @@
     width: 80%;
     border: none;
     background: none;
-    color: white;
+    color: black;
     padding: 0.5rem 1.2rem;
   }
 
@@ -63,7 +77,7 @@
     font-size: 1.2rem;
   }
 
-  @media only screen and (max-width: 1023px) {
+  @media only screen and (max-width: 1280px) {
     .menu :global(.search) {
       display: none;
     }

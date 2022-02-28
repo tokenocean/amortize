@@ -53,7 +53,7 @@
   let tab = subject.is_artist ? "creations" : "collection";
 </script>
 
-<div class="container mx-auto lg:px-16 mt-5 md:mt-20">
+<div class="container mx-auto lg:px-16 py-10">
   {#if subject}
     <div class="flex justify-between flex-wrap">
       <div class="w-full xl:w-1/3 xl:max-w-xs mb-20">
@@ -138,7 +138,7 @@
 
       <div class="w-full xl:w-2/3">
         <div
-          class="flex justify-center text-center cursor-pointer tabs flex-wrap mb-14"
+          class="block md:flex justify-center text-center cursor-pointer tabs flex-wrap mb-14"
         >
           {#if subject.is_artist}
             <div
@@ -173,7 +173,8 @@
           <div class="w-full justify-center">
             <div class="w-full max-w-sm mx-auto mb-12">
               {#if $session.user && $session.user.is_artist && $session.user.id === subject.id}
-                <a href="/a/create" class="primary-btn">Submit a new artwork</a>
+                <a href="/a/create" class="primary-btn">Submit a new property</a
+                >
               {/if}
             </div>
             <div class="w-full flex flex-wrap">
@@ -228,14 +229,14 @@
 
   .hover {
     @apply border-b-2;
-    border-bottom: 3px solid #6ed8e0;
+    border-bottom: 3px solid #5082f7;
   }
 
   .tabs div {
     @apply mb-auto h-10 mx-2 md:mx-4;
     &:hover {
       @apply border-b-2;
-      border-bottom: 3px solid #6ed8e0;
+      border-bottom: 3px solid #5082f7;
     }
   }
 

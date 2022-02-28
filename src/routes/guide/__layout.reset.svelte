@@ -13,7 +13,7 @@
 <Snack />
 
 <Sidebar bind:open />
-<div class={y > 50 ? "sticky" : ""}>
+<div class={y > 50 ? "sticky bg-white" : "bg-white"}>
   <Navbar bind:sidebar={open} />
 </div>
 <Dialog />

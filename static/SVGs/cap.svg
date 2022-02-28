@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_31" data-name="Rectangle 31" width="32" height="32" transform="translate(363 1326)"/>
+    </clipPath>
+  </defs>
+  <g id="Cap_Rate" data-name="Cap Rate" transform="translate(-363 -1326)" clip-path="url(#clip-path)">
+    <g id="discount" transform="translate(363 1326)">
+      <path id="Path_110" data-name="Path 110" d="M16,32A16,16,0,1,0,0,16,16.018,16.018,0,0,0,16,32ZM16,1.427A14.573,14.573,0,1,1,1.427,16,14.59,14.59,0,0,1,16,1.427Zm0,0"/>
+      <path id="Path_111" data-name="Path 111" d="M12.056,14.562A2.954,2.954,0,1,0,9.1,11.608a2.954,2.954,0,0,0,2.954,2.955Zm0-4.482a1.528,1.528,0,1,1-1.527,1.527,1.528,1.528,0,0,1,1.527-1.527Zm0,0"/>
+      <path id="Path_112" data-name="Path 112" d="M16.81,20.572a2.954,2.954,0,1,0,2.954-2.955A2.954,2.954,0,0,0,16.81,20.572Zm4.482,0a1.528,1.528,0,1,1-1.528-1.528A1.528,1.528,0,0,1,21.293,20.572Zm0,0"/>
+      <path id="Path_113" data-name="Path 113" d="M10.568,24.329a.713.713,0,0,0,.987-.208L21.64,8.658a.713.713,0,1,0-1.2-.779L10.36,23.342a.713.713,0,0,0,.208.987Zm0,0"/>
+    </g>
+  </g>
+</svg>

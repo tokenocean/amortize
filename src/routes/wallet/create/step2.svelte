@@ -70,11 +70,11 @@
     padding: 7px;
   }
   .pagination:focus {
-    color: #6aced5;
+    color: #5082f7;
   }
 
   .active {
-    color: #6aced5;
+    color: #5082f7;
   }
 
   .word {

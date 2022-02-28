@@ -62,33 +62,11 @@
     <input
       class="border-0 border-b-2"
       style="border-radius: 0 !important"
-      placeholder="What's your artwork title?"
+      placeholder="What's your property title?"
       on:input={({ target: { value } }) => debounce(value)}
       bind:this={input}
     />
   </div>
-  <div class="toggle mb-6">
-    <label for="physical" class="inline-flex items-center">
-      <input
-        id="physical"
-        class="form-checkbox h-6 w-6"
-        type="checkbox"
-        bind:checked={artwork.is_physical}
-      />
-      <span class="ml-3">This is a physical artwork</span>
-    </label>
-  </div>
-  {#if !artwork.id}
-    <div class="flex flex-col mb-6">
-      <label for="editions">Number of editions</label>
-      <input
-        id="editions"
-        placeholder="Editions"
-        bind:value={artwork.editions}
-        class="w-1/2"
-      />
-    </div>
-  {/if}
   <div class="flex flex-col mb-6">
     <label for="description">Description</label>
     <textarea
@@ -105,7 +83,7 @@
           <div class="mt-1 mb-0">
             <span class="tooltip">
               <i class="text-midblue text-xl">
-                <Fa icon={faQuestionCircle} />
+                <Fa icon={faQuestionCircle} class="text-blueberry" />
               </i>
               <span class="tooltip-text bg-gray-100 shadow ml-4 rounded"
                 >The ticker is a short 3-5 character identifier for your asset
@@ -126,8 +104,7 @@
   <div class="flex flex-col mb-6">
     <label for="tags"
       >Tags
-      <span class="text-gray-400">(e.g. Abstract, monochromatic, etc)</span
-      ></label
+      <span class="text-gray-400">(e.g. Waterfront, Acreage, etc)</span></label
     >
     <Select
       id="tags"
@@ -162,8 +139,8 @@
   input[type="checkbox"]:checked {
     appearance: none;
     border: 5px solid #fff;
-    outline: 2px solid #6ed8e0;
-    background-color: #6ed8e0;
+    outline: 2px solid #5082f7;
+    background-color: #5082f7;
     padding: 2px;
     border-radius: 0;
   }

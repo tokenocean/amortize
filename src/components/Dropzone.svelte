@@ -5,7 +5,7 @@
 
   const dispatch = createEventDispatcher();
 
-  export let title = "Upload Your Artwork";
+  export let title = "Upload Your Property";
   export let style = "box";
 
   let fileInput;
@@ -101,7 +101,7 @@
 
   #drop-area {
     cursor: pointer;
-    border: 2px solid #6ed8e0;
+    border: 2px solid #5082f7;
     border-radius: 10px;
     width: 80%;
     max-width: 350px;
@@ -115,7 +115,7 @@
   }
 
   #drop-area.highlight {
-    border-color: #6ed8e0;
+    border-color: #5082f7;
   }
 
   #fileElem {

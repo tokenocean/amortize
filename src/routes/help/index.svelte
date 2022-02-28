@@ -24,28 +24,30 @@
 
         <p>
           NFT’s can be issued on different blockchains and networks. On {branding.projectName},
-          they're created on the Liquid Network, a Bitcoin layer-2 solution and sidechain, that 
-          can be stored in any wallet that supports Liquid assets. {branding.projectName} offers
-          a free built-in web wallet that gets used by default.
+          they're created on the Liquid Network, a Bitcoin layer-2 solution and
+          sidechain, that can be stored in any wallet that supports Liquid
+          assets. {branding.projectName} offers a free built-in web wallet that gets
+          used by default.
         </p>
 
         <h3>How are they created?</h3>
 
         <p>
-          When an artist first uploads an image or video file for an artwork,
+          When an agent first uploads an image or video file for an property,
           the file is added to the IPFS network and assigned a hash number that
-          uniquely identifies the contents of the file. The artist's {branding.projectName}
+          uniquely identifies the contents of the file. The agent's {branding.projectName}
           wallet will then generate a Liquid asset issuance transaction containing
-          the artwork's title and its hash and broadcast it to be permanently
-          recorded in the Liquid blockchain.
+          the property's title and its hash and broadcast it to be permanently recorded
+          in the Liquid blockchain.
         </p>
 
-        <h3>Who can publish their art here?</h3>
+        <h3>Who can publish their properties here?</h3>
 
         <p>
-          Raretoshi is a curated physical and digital art marketplace focused solely 
-          on Bitcoin art. Your application will be reviewed by our team and we'll reach 
-          out to let you know if you’ve been accepted.
+          Amortize is a curated physical and digital properties marketplace
+          focused solely on Bitcoin properties. Your application will be
+          reviewed by our team and we'll reach out to let you know if you’ve
+          been accepted.
         </p>
 
         <h3>
@@ -55,36 +57,34 @@
         <p>
           {branding.projectName} is the first NFT platform that uses the Bitcoin
           Liquid Network instead of Ethereum or Counterparty. The Liquid Network
-          is a Bitcoin layer-2 solution and sidechain where transaction fees are denominated in 
-          Liquid Bitcoin (L-BTC), which is pegged 1:1 to bitcoin.
+          is a Bitcoin layer-2 solution and sidechain where transaction fees are
+          denominated in Liquid Bitcoin (L-BTC), which is pegged 1:1 to bitcoin.
+          <br /><br />
+          Transaction fees on Liquid are orders of magnitude cheaper than on the
+          Bitcoin or Ethereum networks. Liquid also supports native asset issuance
+          and atomic swaps, making it possible for people who don't know or trust
+          each other to exchange their different tokens and assets directly in a
+          single transaction without needing to go through a trusted 3rd party escrow
+          agent.
         </p>
 
-        <p>
-          Transaction fees on Liquid are orders of magnitude cheaper than on the
-          Bitcoin or Ethereum networks. Liquid also supports native asset issuance 
-          and atomic swaps, making it possible for people who don't know or trust 
-          each other to exchange their different tokens and assets directly in a 
-          single transaction without needing to go through a trusted 3rd party escrow agent.
-        </p>
-        
-         <h3>
+        <h3>
           How much are fees on {branding.projectName}?
         </h3>
-        
+
         <p>
-          Currently, it is 50 sats (0.0000005 BTC) or less than three cents per asset issuance, 
-          and 100 sats (0.000001 BTC) for listing and auctions. The lowest bid price allowed 
-          is 1,000 sats (0.00001 BTC).
+          Currently, it is 50 sats (0.0000005 BTC) or less than three cents per
+          asset issuance, and 100 sats (0.000001 BTC) for listing and auctions.
+          The lowest bid price allowed is 1,000 sats (0.00001 BTC).
         </p>
 
         <h3>How do I get some L-BTC?</h3>
 
         <p>
-          To bid or list art on Raretoshi, patrons will need to have some L-BTC in their Raretoshi wallets. 
-          The easiest way to fund your account is to send onchain BTC or bitcoin on the Lighting Network to 
-          your Raretoshi wallet, and it will auto-convert to L-BTC.
-
-          You can also watch <a
+          To bid or list properties on Amortize, patrons will need to have some
+          L-BTC in their Amortize wallets. The easiest way to fund your account
+          is to send onchain BTC or bitcoin on the Lighting Network to your
+          Amortize wallet, and it will auto-convert to L-BTC. You can also watch <a
             href="https://www.youtube.com/watch?v=LxY3oxLQhA8"
             target="_blank">this video tutorial</a
           >
@@ -94,15 +94,18 @@
       <div class="contact boxShadow">
         <p>Need more help?</p>
         <ul>
-          <li><a href="/guide">Explore user guide</a></li>
           <li>
-            <a href={branding.urls.external.discord} target="_blank" rel='noreferrer'
-              >Chat with support</a
+            <a
+              href={branding.urls.external.discord}
+              target="_blank"
+              rel="noreferrer">Chat with support</a
             >
           </li>
           <li>
-            <a href="mailto:{branding.emails.support}" target="_blank" rel='noreferrer'
-              >Email support</a
+            <a
+              href="mailto:{branding.emails.support}"
+              target="_blank"
+              rel="noreferrer">Email support</a
             >
           </li>
         </ul>
@@ -129,7 +132,7 @@
   }
 
   .contact {
-    height: 300px;
+    height: 200px;
     width: 800px;
     padding: 30px;
     margin-left: 50px;
@@ -145,7 +148,7 @@
 
   .contact a,
   .faq a {
-    color: #3ba5ac;
+    color: #5082f7;
   }
 
   @media only screen and (max-width: 1023px) {

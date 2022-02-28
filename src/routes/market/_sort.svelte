@@ -23,6 +23,7 @@
     background-repeat: no-repeat;
     background-position: 90%;
   }
+
   @media only screen and (max-width: 1023px) {
     .sort-container {
       margin: 0;

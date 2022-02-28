@@ -93,7 +93,7 @@
 
 {#if $addresses}
   <div class="container mx-auto sm:justify-between mt-10 md:mt-20">
-    <h2 class="mb-4">Transfer Artwork</h2>
+    <h2 class="mb-4">Transfer Property</h2>
 
     {#if loading}
       <ProgressLinear />

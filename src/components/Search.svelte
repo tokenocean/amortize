@@ -68,7 +68,7 @@
   <form on:submit|preventDefault={submit}>
     <div class="flex">
       <input
-        class="lg:w-1/3 border-0 border-b-2 rounded border-lightblue"
+        class="lg:w-1/3 border-0 border-b-2 rounded border-blueberry"
         placeholder="Search..."
         on:input={({ target: { value } }) => debounce(value)}
       />
@@ -95,7 +95,7 @@
             {#each r.artwork || [] as o}
               <div
                 on:click={() => go(o)}
-                class="p-4 cursor-pointer hover:bg-green-100"
+                class="p-4 cursor-pointer hover:bg-blueberry"
               >
                 {o.s}
               </div>
@@ -103,7 +103,7 @@
             {#each r.user || [] as o}
               <div
                 on:click={() => go(o)}
-                class="p-4 cursor-pointer hover:bg-green-100"
+                class="p-4 cursor-pointer hover:bg-blueberry"
               >
                 {o.s}
               </div>
