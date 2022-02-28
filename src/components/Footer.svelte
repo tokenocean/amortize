@@ -27,11 +27,13 @@
       >
         <li><a href="/help">Help | </a></li>
         <li>
-          <a href="https://blockstream.com/liquid/">The Liquid Network | </a>
+          <a href="https://blockstream.com/liquid/" class="ml-1"
+            >The Liquid Network |
+          </a>
         </li>
-        <li><a href="/privacy-policy">Privacy Policy | </a></li>
+        <li><a href="/privacy-policy" class="ml-1">Privacy Policy | </a></li>
         <li>
-          <a href="/terms-and-conditions">Terms of Service | </a>
+          <a href="/terms-and-conditions" class="ml-1">Terms of Service | </a>
         </li>
         <div class="flex justify-center items-center mt-4 md:mt-0">
           <li>
