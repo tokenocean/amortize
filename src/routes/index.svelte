@@ -318,7 +318,26 @@
   </div>
 </div>
 
-<div class="px-4 xl:px-32 py-20 block lg:flex justify-center items-center">
+<div
+  class="w-full px-4 space-y-4 md:space-y-0 xl:space-x-72 lg:space-x-48 md:space-x-10 py-20 block md:flex justify-center items-center"
+>
+  <div class="text-center md:text-left">
+    <p class="text-6xl text-black font-semibold">$23 Trillion</p>
+    <p class="text-greyTwo text-xl">
+      The total value of bitcoin<br /> locked in American home equity.
+    </p>
+  </div>
+  <div class="flex justify-center items-center">
+    <div class="space-y-4">
+      <img src="/keys.jpg" alt="" class="w-96" />
+      <img src="/houses.jpg" alt="" class="w-96" />
+    </div>
+  </div>
+</div>
+
+<div
+  class="bg-greyOne px-4 xl:px-32 py-20 block lg:flex justify-center items-center"
+>
   <div class="w-full lg:w-1/3 space-y-4">
     <p class="text-black font-semibold text-4xl">
       Something here to give more info and look good.
@@ -349,7 +368,7 @@
   </div>
 </div>
 
-<div class="px-4 py-20 bg-greyOne flex justify-center items-center">
+<div class="px-4 py-20 flex justify-center items-center">
   <div class="space-y-10">
     <p class="text-4xl font-semibold text-black">Amortize Markets</p>
     <ul
@@ -357,44 +376,66 @@
     >
       <div class="space-y-1 md:space-y-4">
         <li>Alabama</li>
+        <li>Alaska</li>
         <li>Arizona</li>
 
         <li>Arkansas</li>
         <li>California</li>
+        <li>Colorado</li>
+        <li>Connecticut</li>
       </div>
       <div class="space-y-1 md:space-y-4">
         <li>Delaware</li>
         <li>Florida</li>
         <li>Georgia</li>
+        <li>Hawaii</li>
+        <li>Idaho</li>
         <li>Illinois</li>
+        <li>Indiana</li>
       </div>
       <div class="space-y-1 md:space-y-4">
-        <li>Indiana</li>
+        <li>Iowa</li>
         <li>Kansas</li>
         <li>Kentucky</li>
-        <li>Michigan</li>
+        <li>Louisiana</li>
+        <li>Maine</li>
+        <li>Maryland</li>
+        <li>Massachusetts</li>
       </div>
       <div class="space-y-1 md:space-y-4">
+        <li>Michigan</li>
         <li>Minnesota</li>
         <li>Mississippi</li>
         <li>Missouri</li>
+        <li>Montana</li>
+        <li>Nebraska</li>
         <li>Nevada</li>
       </div>
       <div class="space-y-1 md:space-y-4">
+        <li>New Hampshire</li>
         <li>New Jersey</li>
+        <li>New Mexico</li>
         <li>New York</li>
         <li>North Carolina</li>
+        <li>North Dakota</li>
         <li>Ohio</li>
       </div>
       <div class="space-y-1 md:space-y-4">
         <li>Oklahoma</li>
+        <li>Oregon</li>
         <li>Pennsylvania</li>
+        <li>Rhode Island</li>
         <li>South Carolina</li>
+        <li>South Dakota</li>
         <li>Tennessee</li>
       </div>
       <div class="space-y-1 md:space-y-4">
         <li>Texas</li>
+        <li>Utah</li>
+        <li>Vermont</li>
         <li>Virginia</li>
+        <li>Washington</li>
+        <li>West Virginia</li>
         <li>Wisconsin</li>
         <li>Wyoming</li>
       </div>
