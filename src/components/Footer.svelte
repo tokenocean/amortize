@@ -9,6 +9,9 @@
     faTwitter,
   } from "@fortawesome/free-brands-svg-icons";
   import { faRss } from "@fortawesome/free-solid-svg-icons";
+
+  let date = new Date();
+  let year = date.getFullYear();
 </script>
 
 <div class="bg-greyOne px-2">
@@ -19,7 +22,7 @@
       class="block text-center md:text-left md:flex justify-center items-center text-sm w-full mb-2 xl:mb-0"
     >
       <a href="/"><img src="/Logo_Header.svg" alt="logo" class="mx-auto" /></a>
-      <p class="ml-5 text-greyTwo">&copy; Copyright 2022</p>
+      <p class="ml-5 text-greyTwo">&copy; Copyright {year}</p>
     </div>
     <div class="w-full">
       <ul
