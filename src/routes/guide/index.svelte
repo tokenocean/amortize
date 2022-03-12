@@ -61,8 +61,8 @@
             <ol style="list-style: decimal; padding-left: 30px">
               <li>
                 <p>
-                  Go to <a href="https://Amortize.com/" target="_blank"
-                    >https://Amortize.com</a
+                  Go to <a href="https://amortize.pro/" target="_blank"
+                    >https://amortize.pro</a
                   > and navigate to “Sign in” at the top right corner.
                 </p>
                 <img
@@ -109,8 +109,8 @@
               <li>
                 <p>
                   Select “Continue to Amortize” or go back to
-                  <a href="https://Amortize.com/login" target="_blank"
-                    >https://Amortize.com/login</a
+                  <a href="https://amortize.pro/login" target="_blank"
+                    >https://amortize.pro/login</a
                   > and log in with your username and password. The first time you
                   log into your Amortize account you will be prompted to create a
                   new wallet.
@@ -308,7 +308,7 @@
             <p>
               To upload their property, agents can go to their profile page and
               select “Submit a new property.” This option is also available in
-              the “Market” page (https://Amortize.com/market). Current supported
+              the “Market” page (https://amortize.pro/market). Current supported
               file formats are jpg, png, gif and mp4 up to a size limit of
               400MB.
             </p>
