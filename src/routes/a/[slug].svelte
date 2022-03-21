@@ -266,7 +266,7 @@
 
 <Head {metadata} />
 
-<div class="container mx-auto mt-10 md:mt-20">
+<div class="container mx-auto my-10 md:my-20">
   <div class="flex flex-wrap">
     <div class="lg:text-left w-full lg:w-1/3 lg:max-w-xs">
       <h1 class="text-3xl font-black primary-color break-words">
